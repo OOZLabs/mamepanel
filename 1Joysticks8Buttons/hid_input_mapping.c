@@ -4,6 +4,7 @@
  * Creation Date: 2009-09-19
  * Copyright 2009 - 2011 Andreas Oberdorfer
  * License: GNU GPL v2 (see License.txt) or proprietary (CommercialLicense.txt)
+ * Modified by Luis Correia: 2015-01-21
  */
 
 #include "hid_input_mapping.h"
@@ -15,6 +16,7 @@
 // Atmega8 Shift switch off
 PROGMEM const unsigned char NormalMapping[NUMBER_OF_INPUTS] =
 {                       //  Pin Atmega  Function
+/*
     J2_Left,            //  14  PB0     JOY2LEFT
     J2_Button2,         //  15  PB1     JOY2BUTTON2
     J2_Button3,         //  16  PB2     JOY2BUTTON3
@@ -33,6 +35,27 @@ PROGMEM const unsigned char NormalMapping[NUMBER_OF_INPUTS] =
     J2_Button1,         //  11  PD5     JOY2BUTTON1
     J2_Right,           //  12  PD6     JOY2RIGHT
     J2_Up               //  13  PD7     JOY2UP
+*/
+    J1_Button4,         //  14  PB0     JOY2LEFT
+    J1_Button5,         //  15  PB1     JOY2BUTTON2
+    J1_Button6,         //  16  PB2     JOY2BUTTON3
+    J1_Button7,         //  17  PB3     JOY2START
+    J1_Down,            //  18  PB4     JOY1DOWN
+    J1_Up,              //  19  PB5     JOY1UP
+    J1_Left,            //  23  PC0     JOY1LEFT
+    J1_Right,           //  24  PC1     JOY1RIGHT
+    J1_Button1,         //  25  PC2     JOY1BUTTON1
+    J1_Button2,         //  26  PC3     JOY1BUTTON2
+    J1_Button3,         //  27  PC4     JOY1BUTTON3
+    KEY_1,              //  28  PC5     JOY1START
+    0,                  //   3  PD1     SHIFTSWITCH
+    KEY_5,              //   5  PD3     COINTRIGGER
+    J2_Down,            //   6  PD4     JOY2DOWN
+    J2_Button1,         //  11  PD5     JOY2BUTTON1
+    J2_Right,           //  12  PD6     JOY2RIGHT
+    J2_Up               //  13  PD7     JOY2UP
+
+
 };
 
 // Atmega8 Shift switch on

@@ -11,7 +11,8 @@
 # MCU = 32 Make Atmega32 version
 MCU = 8
 
-COMPILE = avr-gcc -Wall -Os -Iusbdrv -I. -mmcu=atmega$(MCU)
+#COMPILE = avr-gcc -Wall -Os -Iusbdrv -I. -mmcu=atmega$(MCU)
+COMPILE = /home/lfcorreia/arduino-1.6.1/hardware/tools/avr/bin/avr-gcc -Wall -Os -Iusbdrv -I. -mmcu=atmega$(MCU)
 
 USBOBJECTS = usbdrv/usbdrv.o usbdrv/usbdrvasm.o usbdrv/oddebug.o
 OBJECTS = $(USBOBJECTS) hid_input.o hid_input_mapping.o main.o

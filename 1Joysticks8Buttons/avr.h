@@ -9,7 +9,7 @@
 #ifndef __AVR_H__
 #define __AVR_H__
 
-#define F_CPU 16000000L
+#define F_CPU 12000000L
 #include <avr/io.h>
 
 #if defined __AVR_ATmega8__

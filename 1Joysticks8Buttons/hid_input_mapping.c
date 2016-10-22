@@ -36,30 +36,31 @@ PROGMEM const unsigned char NormalMapping[NUMBER_OF_INPUTS] =
     J2_Right,           //  12  PD6     JOY2RIGHT
     J2_Up               //  13  PD7     JOY2UP
 */
-    J1_Button4,         //  14  PB0     JOY2LEFT
-    J1_Button5,         //  15  PB1     JOY2BUTTON2
-    J1_Button6,         //  16  PB2     JOY2BUTTON3
-    J1_Button7,         //  17  PB3     JOY2START
-    J1_Down,            //  18  PB4     JOY1DOWN
-    J1_Up,              //  19  PB5     JOY1UP
-    J1_Left,            //  23  PC0     JOY1LEFT
+    J2_Button1,         //  14  PB0     JOY2LEFT
+    J1_Button6,         //  15  PB1     JOY2BUTTON2
+    J1_Button5,         //  16  PB2     JOY2BUTTON3
+    J1_Button4,         //  17  PB3     JOY2START
+    J1_Button3,         //  18  PB4     JOY1DOWN
+    J1_Button2,         //  19  PB5     JOY1UP
+    J1_Button1,         //  23  PC0     JOY1LEFT
     J1_Right,           //  24  PC1     JOY1RIGHT
-    J1_Button1,         //  25  PC2     JOY1BUTTON1
-    J1_Button2,         //  26  PC3     JOY1BUTTON2
-    J1_Button3,         //  27  PC4     JOY1BUTTON3
+    J1_Left,            //  25  PC2     JOY1BUTTON1
+    J1_Down,            //  26  PC3     JOY1BUTTON2
+    J1_Up,              //  27  PC4     JOY1BUTTON3
     KEY_1,              //  28  PC5     JOY1START
     0,                  //   3  PD1     SHIFTSWITCH
     KEY_5,              //   5  PD3     COINTRIGGER
-    J2_Down,            //   6  PD4     JOY2DOWN
-    J2_Button1,         //  11  PD5     JOY2BUTTON1
-    J2_Right,           //  12  PD6     JOY2RIGHT
-    J2_Up               //  13  PD7     JOY2UP
+    J2_Button3,         //   6  PD4     JOY2DOWN
+    J1_Button7,         //  11  PD5     JOY2BUTTON1
+    J1_Button8,         //  12  PD6     JOY2RIGHT
+    J2_Button2,         //  13  PD7     JOY2UP
 
 
 };
 
 // Atmega8 Shift switch on
 PROGMEM const unsigned char ShiftMapping[NUMBER_OF_INPUTS]=
+/*
 {                       //  Pin Atmega  Function
     AC_VolumeDown,      //  14  PB0     JOY2LEFT
     KM_SHIFT_F7,        //  15  PB1     JOY2BUTTON2
@@ -80,6 +81,28 @@ PROGMEM const unsigned char ShiftMapping[NUMBER_OF_INPUTS]=
     AC_VolumeUp,        //  12  PD6     JOY2RIGHT
     KEY_PageUp          //  13  PD7     JOY2UP
 };
+*/
+{                       //  Pin Atmega  Function
+    AC_VolumeDown,      //  14  PB0     JOY2LEFT
+    KM_SHIFT_F7,        //  15  PB1     JOY2BUTTON2
+    KM_ALT_F4,          //  16  PB2     JOY2BUTTON3
+    AC_Mute,            //  17  PB3     JOY2START
+    KEY_Enter,          //  18  PB4     JOY1DOWN
+    KEY_Esc,            //  19  PB5     JOY1UP
+    KEY_Tab,            //  23  PC0     JOY1LEFT
+    KEY_RightArrow,     //  24  PC1     JOY1RIGHT
+    KEY_LeftArrow,      //  25  PC2     JOY1BUTTON1
+    KEY_DownArrow,      //  26  PC3     JOY1BUTTON2
+    KEY_UpArrow,        //  27  PC4     JOY1BUTTON3
+    KEY_P,              //  28  PC5     JOY1START
+    0,                  //   3  PD1     SHIFTSWITCH
+    KEY_5,              //   5  PD3     COINTRIGGER
+    KEY_PageDown,       //   6  PD4     JOY2DOWN
+    KEY_F7,             //  11  PD5     JOY2BUTTON1
+    AC_VolumeUp,        //  12  PD6     JOY2RIGHT
+    KEY_PageUp          //  13  PD7     JOY2UP
+};
+
 
 #elif defined __AVR_ATmega32__
 
